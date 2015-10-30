@@ -1,0 +1,9 @@
+{
+  "spm": {
+    "dependencies": {
+      "seajs": "~2.3.0",
+      "swiper": "~2.7.0",
+      "zepto": "~1.1.3"
+    }
+  }
+}
