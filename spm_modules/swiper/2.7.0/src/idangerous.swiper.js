@@ -1,3 +1,4 @@
+
 var Swiper = function (selector, params) {
     'use strict';
 
@@ -2793,7 +2794,7 @@ Swiper.prototype = {
 /*=========================
   jQuery & Zepto Plugins
   ===========================*/
-if (window.jQuery || window.Zepto) {
+/*if (window.jQuery || window.Zepto) {
     (function ($) {
         'use strict';
         $.fn.swiper = function (params) {
@@ -2809,18 +2810,19 @@ if (window.jQuery || window.Zepto) {
             return firstInstance;
         };
     })(window.jQuery || window.Zepto);
-}
+}*/
 
-// component
+/*// component
 if (typeof(module) !== 'undefined')
 {
     module.exports = Swiper;
 }
 
 // requirejs support
-if (typeof define === 'function' && define.amd) {
+if (typeof define === 'function' ) {
     define([], function () {
         'use strict';
         return Swiper;
     });
 }
+*/
