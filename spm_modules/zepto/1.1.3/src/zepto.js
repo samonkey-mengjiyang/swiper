@@ -1,7 +1,8 @@
 //     Zepto.js
 //     (c) 2010-2014 Thomas Fuchs
 //     Zepto.js may be freely distributed under the MIT license.
-define(function(require, exports, module) {
+console.log(2122)
+
 var Zepto = (function() {
   var undefined, key, $, classList, emptyArray = [], slice = emptyArray.slice, filter = emptyArray.filter,
     document = window.document,
@@ -866,4 +867,3 @@ window.Zepto = Zepto
 window.$ === undefined && (window.$ = Zepto)
 // CMD Wrapper
 module.exports = Zepto;
-})

@@ -7,20 +7,23 @@
 <body>
 	<button>点击我点击我点击我点击我</button>
 	<script type="text/javascript" src="../../spm_modules/seajs/2.3.0/dist/sea.js"></script>
-	<script type="text/javascript">
+<script type="text/javascript" src="../../spm_modules/seajs-wrap/1.0.2/src/seajs-wrap.js"></script>
+		<script type="text/javascript">
+	var Url = "http://192.168.1.107/swiper/";
 		// seajs 的简单配置
 		seajs.config({
 		base: "../../spm_modules/",
 		alias: {
-			'Zepto':'zepto/1.1.3/index.js'
+			'Zepto':'zepto/1.1.3/src/zepto.js',
+			'touch':'zepto/1.1.3/src/touch.js',
+			'tAjax':'zepto/1.1.3/src/ajax.js',
+			'event':'zepto/1.1.3/src/event.js'
 		}
 		})
-
 		// 加载入口模块
-		//seajs.use("../../static/js/content/src/main")
-		seajs.use("../../static/js/content/dist/src/main")
-
+		seajs.use(Url+'static/js/content/src/main',function(ex){})
+		//seajs.use(Url+"static/js/content/dist/src/main")
 	</script>
-
 </body>
 </html>
+<!-- http://192.168.1.107/swiper/tpl/content/ -->

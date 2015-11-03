@@ -1,8 +1,7 @@
 //     Zepto.js
 //     (c) 2010-2014 Thomas Fuchs
 //     Zepto.js may be freely distributed under the MIT license.
-// seajs require
-return function(Zepto){
+// seajs require1
 ;(function($){
   var touch = {},
     touchTimeout, tapTimeout, swipeTimeout, longTapTimeout,
@@ -164,4 +163,5 @@ return function(Zepto){
     $.fn[eventName] = function(callback){ return this.on(eventName, callback) }
   })
 })(Zepto)
-}
+
+

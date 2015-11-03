@@ -1,17 +1,16 @@
-// 所有模块都通过 define 来定义
-define(function(require, exports, module) {
+require('Zepto');
+require('../plugin/event');
+/*require('tAjax');*/
+require('../plugin/touch');
+var a = require('./b.js');
+var c =require('./c.js');
+console.log(c.aj());
+console.log(a.aj());
+console.log($.fn.tap())
+/*$("button").tap(function(){
+	console.log(111)
+})*/
 
-  // 通过 require 引入依赖
-  var $ = require('Zepto');
-$("button").swipeLeft(function(){
-	console.log(1111111111)
-})
-  //var Spinning = require('./spinning');
-
-  // 通过 exports 对外提供接口
- // exports.doSomething = ...
-
-  // 或者通过 module.exports 提供整个接口
-  //module.exports = ...
-
-});
+/*$("button").longTap(function(){
+	console.log(444)
+});*/

@@ -1,8 +1,6 @@
 //     Zepto.js
 //     (c) 2010-2014 Thomas Fuchs
 //     Zepto.js may be freely distributed under the MIT license.
-return function(Zepto){
-  
 ;(function($){
   var _zid = 1, undefined,
       slice = Array.prototype.slice,
@@ -275,4 +273,3 @@ return function(Zepto){
   }
 
 })(Zepto)
-}
