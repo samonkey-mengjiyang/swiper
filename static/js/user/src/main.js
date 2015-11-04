@@ -19,7 +19,10 @@ $("button").on('swipeLeft',function(){
 
 	})
 })
-
+var tpl = 'user';
+if(tpl  == 'user'){
+require.async('./c');
+}
 var mySwiper = new s('.swiper-container',{
 autoplay : 5000,//可选选项，自动滑动
 loop : true,//可选选项，开启循环
