@@ -1,4 +1,3 @@
-
 var Swiper = function (selector, params) {
     'use strict';
 
@@ -2819,7 +2818,7 @@ if (typeof(module) !== 'undefined')
 }
 
 // requirejs support
-if (typeof define === 'function' ) {
+if (typeof define === 'function' && define.amd) {
     define([], function () {
         'use strict';
         return Swiper;

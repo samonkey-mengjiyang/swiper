@@ -1,4 +1,18 @@
-
+require('./dist/idangerous.swiper.css');
+/*
+ * Swiper 2.7.0
+ * Mobile touch slider and framework with hardware accelerated transitions
+ *
+ * http://www.idangero.us/sliders/swiper/
+ *
+ * Copyright 2010-2014, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us/
+ *
+ * Licensed under GPL & MIT
+ *
+ * Released on: August 30, 2014
+*/
 var Swiper = function (selector, params) {
     'use strict';
 
@@ -2819,7 +2833,7 @@ if (typeof(module) !== 'undefined')
 }
 
 // requirejs support
-if (typeof define === 'function' ) {
+if (typeof define === 'function' && define.amd) {
     define([], function () {
         'use strict';
         return Swiper;
