@@ -6,7 +6,6 @@ require('../../plugin/ajax');
 console.log($);
 //var s = require('Swiper');
 var s = require('../../plugin/idangerous.swiper');
-
 $("button").on('swipeLeft',function(){
 	console.log(11)
 	$.ajax({
@@ -15,8 +14,6 @@ $("button").on('swipeLeft',function(){
 		success:function(txt){
 			console.log('请求成功了 哦也！！');
 		}
-
-
 	})
 })
 var tpl = 'user';
