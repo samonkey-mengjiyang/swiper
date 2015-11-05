@@ -2,8 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />    
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=yes"/>
+<meta name="msapplication-tap-highlight" content="no" />
 	<title>登陆</title>
 	<link rel="stylesheet" type="text/css" href="../../spm_modules/swiper/2.7.0/dist/idangerous.swiper.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/include/frozen.css">
+
 </head>
 <body>
 	<div class="swiper-container">
@@ -15,6 +22,25 @@
 </div>
 <div class="box" style="margin-top: 50px">
 	<button style="width: 100%;height: 50px;text-align: center;font-size: 17px;">点我</button>
+</div>
+
+
+     <div class="ui-center">
+
+    <div class="ui-btn" id="btn1">模板创建弹窗</div>
+    <div class="ui-btn" id="btn2">DOM创建弹窗</div>
+</div>
+<div class="ui-dialog">
+    <div class="ui-dialog-cnt">
+        <div class="ui-dialog-bd">
+            <div>
+            <h4>标题</h4>
+            <div>内容</div></div>
+        </div>
+        <div class="ui-dialog-ft ui-btn-group">
+            <button type="button" data-role="button"  class="select" id="dialogButton<%=i%>">关闭</button> 
+        </div>
+    </div>        
 </div>
 <script type="text/javascript" src="../../spm_modules/seajs/2.3.0/dist/sea.js"></script>
 <script type="text/javascript" src="../../spm_modules/seajs-wrap/1.0.2/src/seajs-wrap.js"></script> 
@@ -28,8 +54,8 @@
 		}
 		})
 		// 加载入口模块
-		seajs.use(Url+'static/js/user/src/main',function(ex){})
-		//seajs.use(Url+"static/js/user/dist/src/main")
+		//seajs.use(Url+'static/js/user/src/main',function(ex){})
+		seajs.use(Url+"static/js/user/dist/src/main")
 	</script>
 </body>
 </html>

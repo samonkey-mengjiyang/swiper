@@ -2,6 +2,8 @@ var $ = require('Zepto');
 require('../../plugin/event');
 require('../../plugin/touch');
 require('../../plugin/ajax');
+require('../../plugin/frozen');
+
 
 console.log($);
 //var s = require('Swiper');
@@ -17,10 +19,32 @@ $("button").on('swipeLeft',function(){
 	})
 })
 var tpl = 'user';
-if(tpl  == 'user'){
-require.async('./c');
-}
+
 var mySwiper = new s('.swiper-container',{
 autoplay : 5000,//可选选项，自动滑动
 loop : true,//可选选项，开启循环
+})
+
+
+
+$("#btn1").tap(function(){
+    var dia=$.dialog({
+        title:'温馨提示',
+        content:'温馨提示内容',
+        button:["确认","取消"]
+    });
+
+    dia.on("dialog:action",function(e){
+        console.log(e.index)
+    });
+    dia.on("dialog:hide",function(e){
+        console.log("dialog hide")
+    });
+
+})
+$("#btn2").tap(function(){
+    var dia2=$(".ui-dialog").dialog("show");
+    dia2.on("dialog:action",function(e){
+        console.log(e.index)
+    });
 })
